@@ -65,7 +65,7 @@ rng(1234,'twister')
 
 x = randn(n,d);
 
-n_out = 10;
+n_out = 15;
 
 x(1:n_out,:) = x(1:n_out,:)*sqrt(1.5) + 0; 
 

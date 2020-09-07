@@ -1,4 +1,4 @@
-%% Screening using pairwise distances
+%% Initial screening using pairwise distances
 
 
 function [candiInd, DH1] = oscreenPairwise(tR,eta,propS)
@@ -15,7 +15,7 @@ function [candiInd, DH1] = oscreenPairwise(tR,eta,propS)
     pdmd = zeros(1,n);
     
     
-    for( ii = 1:n)
+    for ii = 1:n
         
         pdmd(ii) = median( pd(ii,setdiff(1:n,ii) ) );
         

@@ -1,13 +1,10 @@
 function[test_summary, Ref_dist] = SRoutlier(x,eta,propS,K)
-
 % x     : Data N x d
 % eta   : Proportion of candidate outliers
 % PropS : Proportion of the size of the initial reference set
 % K     : Number of subspace rotations
 
-% output - test_summary : p-values and corresponding indices 
-%        - Ref_dist     : Emprical SR distributions
-
+% output - test_summary : p-values and corresponding indice
 
         n  = size(x,1); % Sample size
         
